@@ -1,0 +1,17 @@
+{
+	"manifest_version" : 2,
+	"name" : "Bella's gift",
+	"version" : "0.1",
+	"permissions": ["storage", "notifications", "tabs", "https://*/*", "http://*/*"],
+	"background":{
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"browser_action":{
+		"default_title": "Notes"
+	},
+	"content_security_policy": "script-src https://fonts.googleapis.com 'self' 'unsafe-eval'; object-src 'self'",
+	"chrome_url_overrides" : {
+		"newtab" : "gift.html"
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="interface.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <title>New tab</title>
+</head>
+
+<body id="body">
+    <script src="gift.js"></script>
+    <p id="time"></p>
+    <button id="hide" style="width:17%;height:12%;display:none;z-index:1001;position:absolute;right:10%;bottom:8.5%;cursor:pointer">Back</button>
+    <div id="buttons">
+        <img src="images/cat.png" id="catimg">
+        <img src="images/cheering.png" id="cheeringimg">
+        <img src="images/heart.png" id="heartimg">
+        <img src="images/settings.png" id="settingsimg">
+    </div>
+    <div id="encouragement" style="display:none">
+        <p id="texts" style="font-size:30px;text-align:center">Merry Christmas!</p>
+        <button id="Texts" style="position:absolute;left:43.9%">Press me for
+<br>encouragement!</button>
+    </div>
+    <br>
+    <div id="versary" style="display:none;padding-left:10px">
+        <p style="position:absolute;left:70%;top:.5%;font-size:20px">We've been together for:
+            <br>Year:Week:Day:Hr:Min:Sec</p>
+        <p style="position: absolute; left: 70%" id="togetherfor"></p>
+        <p id="anni" style="font-size:35px"></p>
+        <p id="montha" style="font-size:35px"></p>
+    </div>
+    <br>
+    <div id="meetup" style="display:none">
+        <form method="post">
+            <p>Fill in the date of our next meetup, and how many weeks there are between each one.</p>Month of next meet-up:
+            <br>
+            <input id="month">
+            <br>Day of next meet-up:
+            <br>
+            <input id="day">
+            <br>Weeks between each meet-up:
+            <br>
+            <input id="between">
+            <br>
+            <input type="button" value="Submit" id="submit"></form>
+        <p id="date"></p>
+    </div>
+    <br>
+    <div id="settings" style="display:none;padding-left:10px">
+        <form id="greetings">
+            <h1>Greetings:</h1>
+            Morning message:<br>
+            <input id="morning"><br> Afternoon message:<br>
+            <input id="afternoon"><br> Evening message:<br>
+            <input id="evening"><br>
+        </form><br>
+        <button id="save">Save</button>
+        <h1 style="color:#fff">Background:</h1>
+        <p>Categories:</p>
+        <button id="animals">Animals</button>
+        <button id="arch">Architecture</button>
+        <button id="nature">Nature</button>
+        <button id="people">People</button>
+        <button id="tech">Tech</button><br>
+        <button id="default" style="position:absolute;width:17%;height:12%;left:5%;bottom:5%">Back to<br>defaults</button>
+    </div>
+    <button id="edit" style="z-index:1002">Move
+<br>Notes</button>
+    <textarea id="notes" class="notes" style="display:none;z-index:1001" rows="10" placeholder="Type stuff in here!" spellcheck="false"></textarea>
+    <div id="cattodiv" style="display:none">
+        <a><img src="http://thecatapi.com/api/images/get?format=src&type=png&size=med" id="CATTO" style="position:relative;left:20px;top:20px"></a>
+        <p id="nocatto"></p>
+    </div>
+</body>
+
+</html>
